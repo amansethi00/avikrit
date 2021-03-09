@@ -1,0 +1,6 @@
+@import "root.css";
+@import "nav.css";
+/* component library css */
+.social-media {
+  display: flex;
+}
