@@ -1,5 +1,5 @@
-@import "root.css";
-@import "nav.css";
+@import "./css/root.css";
+/* @import "./css/utilities/utilities.css"; */
 /* component library css */
 .social-media {
   display: flex;

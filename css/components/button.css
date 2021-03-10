@@ -1,0 +1,27 @@
+@import "../utilities/utilities.css";
+
+.primary {
+  background-color: var(--blue);
+  color: var(--white);
+}
+button {
+  cursor: pointer;
+}
+.outline-red {
+  border: 1px solid var(--red);
+}
+.outline-black {
+  border: 1px solid var(--black);
+}
+.outline-yellow {
+  border: 1px solid var(--yellow);
+}
+.outline-blue {
+  border: 1px solid var(--blue);
+}
+.outline-purple {
+  border: 1px solid var(--purple);
+}
+.outline-green {
+  border: 1px solid var(--green);
+}

@@ -1,0 +1,6 @@
+@import "../utilities/utilities.css";
+
+.nav {
+  display: flex;
+  background-color: var(--light-blue);
+}
