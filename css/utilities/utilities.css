@@ -40,6 +40,7 @@
 }
 html {
   font-family: var(--font-family);
+  font-size: var(--font-size-md);
 }
 
 /* font sizes */
@@ -94,52 +95,52 @@ html {
   padding: 3rem;
 }
 .pd-right-half {
-  padding: 0.5rem;
+  padding-right: 0.5rem;
 }
 .pd-right-1 {
-  padding: 1rem;
+  padding-right: 1rem;
 }
 .pd-right-2 {
-  padding: 2rem;
+  padding-right: 2rem;
 }
 .pd-right-3 {
-  padding: 3rem;
+  padding-right: 3rem;
 }
 .pd-left-half {
-  padding: 0.5rem;
+  padding-left: 0.5rem;
 }
 .pd-left-1 {
-  padding: 1rem;
+  padding-left: 1rem;
 }
 .pd-left-2 {
-  padding: 2rem;
+  padding-left: 2rem;
 }
 .pd-left-3 {
-  padding: 3rem;
+  padding-left: 3rem;
 }
 .pd-top-half {
-  padding: 0.5rem;
+  padding-top: 0.5rem;
 }
 .pd-top-1 {
-  padding: 1rem;
+  padding-top: 1rem;
 }
 .pd-top-2 {
-  padding: 2rem;
+  padding-top: 2rem;
 }
 .pd-top-3 {
-  padding: 3rem;
+  padding-top: 3rem;
 }
 .pd-bottom-half {
-  padding: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .pd-bottom-1 {
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 .pd-bottom-2 {
-  padding: 2rem;
+  padding-bottom: 2rem;
 }
 .pd-bottom-3 {
-  padding: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* flex  */
@@ -201,20 +202,59 @@ html {
 .bg-transparent {
   background: transparent;
 }
+.bg-light-green {
+  background-color: var(--light-green);
+}
 .bg-green {
   background-color: var(--green);
+}
+.bg-dark-green {
+  background-color: var(--dark-green);
+}
+.bg-light-gray {
+  background-color: var(--light-gray);
 }
 .bg-gray {
   background-color: var(--gray);
 }
+.bg-dark-gray {
+  background-color: var(--dark-gray);
+}
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
 .bg-blue {
   background-color: var(--blue);
+}
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+.bg-light-red {
+  background-color: var(--light-red);
 }
 .bg-red {
   background-color: var(--red);
 }
+.bg-dark-red {
+  background-color: var(--dark-red);
+}
+.bg-light-yellow {
+  background-color: var(--light-yellow);
+}
 .bg-yellow {
   background-color: var(--yellow);
+}
+.bg-dark-yellow {
+  background-color: var(--dark-yellow);
+}
+.bg-light-purple {
+  background-color: var(--light-purple);
+}
+.bg-purple {
+  background-color: var(--purple);
+}
+.bg-dark-purple {
+  background-color: var(--dark-purple);
 }
 /* color */
 .white {

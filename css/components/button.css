@@ -1,12 +1,33 @@
 @import "../utilities/utilities.css";
 
-.primary {
-  background-color: var(--blue);
-  color: var(--white);
-}
 button {
   cursor: pointer;
+  background: transparent;
 }
+/* primary button style */
+.btn-primary-lg {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: var(--font-size-large);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+.btn-primary-md {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: var(--font-size-md);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.btn-primary-sm {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: var(--font-size-sm);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+/* outline button style */
 .outline-none {
   border: 0px;
 }

@@ -1,0 +1,6 @@
+@import "../utilities/utilities.css";
+
+.alert {
+  width: 100%;
+  padding: 1rem;
+}
