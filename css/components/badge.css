@@ -1,0 +1,64 @@
+@import "../utilities/utilities.css";
+
+/* badge container */
+.badge {
+  position: relative;
+}
+/* badge image icons */
+.badge-img-sm {
+  height: 2rem;
+  width: 2rem;
+}
+.badge-img-md {
+  height: 3rem;
+  width: 3rem;
+}
+.badge-img-lg {
+  height: 4rem;
+  width: 4rem;
+}
+
+/* badge text for icons */
+.badge-text {
+  position: absolute;
+  top: 0px;
+  padding: 0.2rem;
+}
+.badge-text-sm {
+  position: absolute;
+  top: 0px;
+  padding: 0.1rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.badge-text-md {
+  position: absolute;
+  top: 0px;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.badge-text-lg {
+  position: absolute;
+  top: 0px;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* badge avatar text */
+.badge-avatar-text-sm {
+  position: absolute;
+  top: -4px;
+  border-radius: 50%;
+}
+.badge-avatar-text-md {
+  position: absolute;
+  top: -4px;
+  border-radius: 50%;
+}
+.badge-avatar-text-lg {
+  position: absolute;
+  top: -8px;
+  border-radius: 50%;
+}

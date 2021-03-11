@@ -7,6 +7,9 @@
 button {
   cursor: pointer;
 }
+.outline-none {
+  border: 0px;
+}
 .outline-red {
   border: 1px solid var(--red);
 }
