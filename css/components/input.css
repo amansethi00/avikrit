@@ -1,0 +1,12 @@
+@import "../utilities/utilities.css";
+
+.input {
+  padding: 0.2rem;
+  border: 1px solid var(--light-gray);
+}
+input[type="email"]:valid {
+  background: url(/assets/home.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
