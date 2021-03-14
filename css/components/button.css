@@ -3,33 +3,76 @@
 button {
   cursor: pointer;
   background: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  border: 2px solid var(--primary-color);
 }
 /* primary button style */
 .btn-primary-lg {
-  background-color: var(--blue);
+  background-color: var(--primary-color);
   color: var(--white);
   font-size: var(--font-size-large);
-  padding: 1rem;
-  border-radius: 0.25rem;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
   text-decoration: none;
 }
 .btn-primary-md {
-  background-color: var(--blue);
+  background-color: var(--primary-color);
   color: var(--white);
   font-size: var(--font-size-md);
-  padding: 0.5rem;
-  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
   text-decoration: none;
 }
 .btn-primary-sm {
-  background-color: var(--blue);
+  background-color: var(--primary-color);
   color: var(--white);
   font-size: var(--font-size-sm);
-  padding: 0.25rem;
-  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
   text-decoration: none;
 }
+.btn-primary-lg:hover,
+.btn-primary-md:hover,
+.btn-primary-sm:hover {
+  background-color: var(--primary-color-hover);
+}
+.btn-secondary-lg {
+  color: var(--primary-color);
+  font-size: var(--font-size-large);
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+.btn-secondary-md {
+  /* background-color: var(--primary-color); */
+  color: var(--primary-color);
+  font-size: var(--font-size-md);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.btn-secondary-sm {
+  /* background-color: var(--primary-color); */
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.btn-secondary-lg:hover,
+.btn-secondary-md:hover,
+.btn-secondary-sm:hover {
+  background-color: var(--secondary-color-hover);
+}
 
+.btn-floating {
+  position: fixed;
+  border-radius: 50pc;
+  padding: 1rem;
+  background-color: var(--orange);
+  color: var(--white);
+  border: 1px solid var(--orange);
+}
 /* outline button style */
 .outline-none {
   border: 0px;

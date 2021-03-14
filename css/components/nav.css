@@ -2,5 +2,14 @@
 
 .nav {
   display: flex;
-  background-color: var(--light-blue);
+}
+nav {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0rem;
+  margin: 0rem;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
 }

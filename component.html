@@ -10,9 +10,14 @@
   <body>
     @navigation
     <nav
-      class="nav row myclass pd-1 justify-content-space-between align-items-center"
+      class="nav pd-half pd-left-1 row justify-content-space-between align-items-center"
     >
-      <div class="bolder xlg">Hello</div>
+      <div class="col align-items-center">
+        <img src="./assets/molecule.svg" style="width: 3rem; height: 3rem" />
+        <div class="md bold">Avikrit</div>
+      </div>
+
+      <div class="bolder xlg">Docs</div>
       <div class="md normal">
         <button
           class="socials pd-right-half bg-transparent border-radius-half outline-none dark-green bold"
@@ -47,22 +52,28 @@
     <button class="btn-primary-lg">Primary Button</button>
     <button class="btn-primary-md">Primary Button</button>
     <button class="btn-primary-sm">Primary Button</button>
-    <button class="outline-red pd-half border-radius-half bold dark-red">
-      Outline red Button
-    </button>
-    <button class="outline-green pd-half border-radius-half bold dark-green">
-      Outline green Button
-    </button>
-    <button class="border-radius-half pd-quarter bg-red white bold">
-      small button
-    </button>
-    <button
-      class="border-radius-50p lg bold fixed bg-red white pd-half outline-black"
-    >
-      F A B
-    </button>
-    <a href="https://amansethi.netlify.app" class="btn-primary-sm">Hello</a>
+    <button class="btn-secondary-lg">secondary Button</button>
+    <button class="btn-secondary-md">secondary Button</button>
+    <button class="btn-secondary-sm">secondary Button</button>
 
+    <button class="btn-floating right-1rem bottom-1rem">fab</button>
+    <a href="https://amansethi.netlify.app" class="btn-primary-lg"
+      >Link button</a
+    >
+    <br />
+    <h4>@avatar</h4>
+    <img
+      src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
+      class="avatar-lg"
+    />
+    <img
+      src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
+      class="avatar-md"
+    />
+    <img
+      src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
+      class="avatar-sm"
+    />
     <div class="lg bold">@badge</div>
     <div class="md bold">badge on icons</div>
     <div class="badge">
@@ -99,6 +110,7 @@
       />
       <span class="badge-avatar-text-lg bg-red white pd-quarter">41</span>
     </div>
+
     <div class="lg bold">@alert</div>
     <div class="alert bg-light-red dark-red">This is a red alert</div>
     <div class="alert bg-light-blue dark-blue">This is a blue alert</div>
@@ -126,6 +138,26 @@
         adipisci delectus quae veritatis similique nobis, accusantium corporis
         nulla magnam aliquam beatae quaerat. Quibusdam.
       </div>
+    </div>
+    <br />
+    <div class="card" style="width: 15rem">
+      <div
+        class="row align-items-center justify-content-flex-start"
+        style="width: 100%"
+      >
+        <img
+          src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
+          class="avatar-lg"
+        />
+        <div class="card-head pd-left-1">Name</div>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+        vitae nemo maiores reprehenderit eaque, recusandae quaerat reiciendis
+        nihil, ut ducimus quidem officia maxime vero dolore facilis sequi
+        obcaecati porro provident?
+      </p>
     </div>
     <br />
     <h4>row card</h4>
@@ -236,6 +268,7 @@
       class="border-radius-50p"
       style="height: 6rem; width: 6rem"
     />
+    <br />
     <label for="email" class="input-label">Email address</label>
     <input required type="email" class="input" placeholder="name@example.com" />
   </body>

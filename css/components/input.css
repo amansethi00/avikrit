@@ -2,7 +2,14 @@
 
 .input {
   padding: 0.2rem;
-  border: 1px solid var(--light-gray);
+  outline: none;
+  border-width: 0px;
+  border-bottom-width: 2px;
+  border-bottom-color: var(--light-gray);
+  border-bottom-style: solid;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  font-family: "Josefin Sans", sans-serif;
 }
 input[type="email"]:valid {
   background: url(/assets/home.svg);

@@ -4,3 +4,25 @@
 .social-media {
   display: flex;
 }
+html {
+  background-color: #f5f5f5be;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+    "sidebar main "
+    "sidebar main "
+    "sidebar main ";
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.main {
+  grid-area: main;
+}
