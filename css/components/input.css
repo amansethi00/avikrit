@@ -9,7 +9,7 @@
   border-bottom-style: solid;
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--font-family);
 }
 input[type="email"]:valid {
   background: url(/assets/home.svg);

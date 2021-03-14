@@ -30,6 +30,10 @@
   padding: 0.1rem;
   text-align: center;
   border-radius: 50%;
+  font-size: var(--font-size--xsm);
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+  color: white;
 }
 .badge-text-md {
   position: absolute;
@@ -37,6 +41,10 @@
   padding: 0.2rem;
   text-align: center;
   border-radius: 50%;
+  font-size: var(--font-size--sm);
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+  color: white;
 }
 .badge-text-lg {
   position: absolute;
@@ -44,6 +52,10 @@
   padding: 0.3rem;
   text-align: center;
   border-radius: 50%;
+  font-size: var(--font-size--md);
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+  color: white;
 }
 
 /* badge avatar text */
@@ -51,14 +63,26 @@
   position: absolute;
   top: -4px;
   border-radius: 50%;
+  background-color: var(--orange);
+  padding: 0.25rem;
+  font-size: var(--font-size--xsm);
+  color: white;
 }
 .badge-avatar-text-md {
   position: absolute;
   top: -4px;
   border-radius: 50%;
+  background-color: var(--orange);
+  padding: 0.2rem;
+  font-size: var(--font-size--sm);
+  color: white;
 }
 .badge-avatar-text-lg {
   position: absolute;
   top: -8px;
   border-radius: 50%;
+  background-color: var(--orange);
+  padding: 0.3rem;
+  font-size: var(--font-size--md);
+  color: white;
 }

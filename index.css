@@ -22,6 +22,21 @@ body {
 }
 .sidebar {
   grid-area: sidebar;
+  position: sticky;
+
+  top: 5rem;
+  height: calc(100vh - 7rem);
+
+  /* display: block !important; */
+  /* height: 20rem;
+  padding-left: 0.25rem;
+  margin-left: -0.25rem; */
+  overflow-y: auto;
+}
+.sidebar-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .main {
   grid-area: main;
