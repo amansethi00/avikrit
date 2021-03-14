@@ -11,3 +11,9 @@
 @import "./components/alert.css";
 @import "./components/card.css";
 @import "./components/input.css";
+
+pre {
+  font-family: var(--font-family);
+  background-color: var(--light-gray);
+  padding-top: 1rem;
+}

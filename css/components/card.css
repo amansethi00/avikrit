@@ -4,13 +4,17 @@
   width: 100%;
 }
 .card-head {
+  padding-top: 0.8rem;
   font-size: var(--font-size-large);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-md);
   margin-bottom: 0.5rem;
 }
-.card {
+.card-body {
   padding: 1rem;
+}
+.card {
   position: relative;
+  border: 1px solid var(--light-gray);
 }
 .card-badge {
   display: flex;
