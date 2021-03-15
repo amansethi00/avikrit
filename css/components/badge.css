@@ -26,63 +26,74 @@
 }
 .badge-text-sm {
   position: absolute;
-  top: 0px;
+  bottom: 0px;
+  left: 1.3rem;
   padding: 0.1rem;
   text-align: center;
   border-radius: 50%;
-  font-size: var(--font-size--xsm);
+  font-size: var(--font-size-xsm);
   border: 1px solid var(--orange);
   background-color: var(--orange);
   color: white;
+  border: 2px solid var(--white);
 }
 .badge-text-md {
   position: absolute;
-  top: 0px;
+  bottom: 0rem;
+  left: 2rem;
   padding: 0.2rem;
   text-align: center;
   border-radius: 50%;
-  font-size: var(--font-size--sm);
-  border: 1px solid var(--orange);
+  font-size: var(--font-size-sm);
+  border: 2px solid var(--white);
   background-color: var(--orange);
   color: white;
 }
 .badge-text-lg {
   position: absolute;
-  top: 0px;
+  bottom: 0px;
+  left: 2.7rem;
   padding: 0.3rem;
   text-align: center;
   border-radius: 50%;
-  font-size: var(--font-size--md);
+  font-size: var(--font-size-md);
   border: 1px solid var(--orange);
   background-color: var(--orange);
   color: white;
+  border: 2px solid var(--white);
 }
 
 /* badge avatar text */
 .badge-avatar-text-sm {
   position: absolute;
-  top: -4px;
+  bottom: 0rem;
+  left: 1.4rem;
   border-radius: 50%;
   background-color: var(--orange);
   padding: 0.25rem;
-  font-size: var(--font-size--xsm);
+  font-size: var(--font-size-xsm);
   color: white;
+  border: 2px solid var(--white);
 }
 .badge-avatar-text-md {
   position: absolute;
-  top: -4px;
+  bottom: 0rem;
+  left: 2.4rem;
   border-radius: 50%;
   background-color: var(--orange);
   padding: 0.2rem;
-  font-size: var(--font-size--sm);
+  font-size: var(--font-size-sm);
   color: white;
+  border: 2px solid var(--white);
 }
 .badge-avatar-text-lg {
   position: absolute;
-  top: -8px;
+  bottom: 0px;
+  left: 2.9rem;
   border-radius: 50%;
   background-color: var(--orange);
   padding: 0.3rem;
-  font-size: var(--font-size--md);
+  font-size: var(--font-size-md);
   color: white;
+  border: 2px solid var(--white);
 }

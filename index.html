@@ -15,7 +15,7 @@
       class="nav pd-half pd-left-1 row justify-content-space-between align-items-center"
     >
       <div class="col align-items-center">
-        <img src="./assets/molecule.svg" style="width: 3rem; height: 2.5rem" />
+        <img src="./assets/molecule.svg" style="width: 3rem; height: 2rem" />
         <div class="md bold">Avikrit</div>
       </div>
 
@@ -32,15 +32,15 @@
         <div class="pd-1 sidebar-text">
           <a href="..." class="btn-secondary-md">Intro</a>
           <br>
-          <a href="..." class="btn-secondary-md">Alert</a>
+          <a href="#avatar" class="btn-secondary-md">Avatar</a>
           <br>
-          <a href="..." class="btn-secondary-md">Avatar</a>
+          <a href="#alert" class="btn-secondary-md">Alert</a>
           <br>
-          <a href="..." class="btn-secondary-md">Badge</a>
+          <a href="#badge" class="btn-secondary-md">Badge</a>
           <br>
-          <a href="..." class="btn-secondary-md">Button</a>
+          <a href="#button" class="btn-secondary-md">Button</a>
           <br>  
-          <a href="..." class="btn-secondary-md">Card</a>
+          <a href="#  card" class="btn-secondary-md">Card</a>
           <br>
           <a href="..." class="btn-secondary-md">Card</a>
           <br>
@@ -74,8 +74,8 @@
       <pre >
         &#x3C;link rel=&#x22;stylesheet&#x22;  href=&#x22;https://avikrit.netlify.app/index.css&#x22;/&#x3E;
       </pre>
-      <div class="pd-1 ">
-        <h3>Avatar</h3>
+      <div class="pd-1 " id="avatar">
+        <h3 >Avatar</h3>
         <div class="mg-bottom-1"><img
           src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
           class="avatar-lg"
@@ -102,7 +102,7 @@
         </div>
         
       </div>
-      <div class="pd-1 mg-bottom-1">
+      <div class="pd-1 mg-bottom-1" id="alert">
         <h3>Alert</h3>
         <div class="alert-red mg-bottom-1">
           <div class="alert-text">Danger alert</div>
@@ -136,12 +136,12 @@
           &#x3C;/div&#x3E;
         </pre>
       </div>
-      <div class="pd-1 mg-bottom-1">
+      <div class="pd-1 mg-bottom-1" id="badge">
         <h3>Badge</h3>
         <h4>badge on icons</h4>
         <div class="badge">
           <img src="./assets/home.svg" class="badge-img-sm" />
-          <span class="badge-text-sm">42</span>
+          <span class="badge-text-sm " >41</span>
         </div>
         <pre class="mg-bottom-1">
           &#x3C;div class=&#x22;badge&#x22;&#x3E;
@@ -210,7 +210,7 @@
           &#x3C;/div&#x3E;
         </pre>
       </div>
-      <div class="pd-1 mg-bottom-1">
+      <div class="pd-1 mg-bottom-1" id="button">
         <h3>Button</h3>        
         <button class="btn-primary-lg">Primary Button</button>
         <button class="btn-primary-md">Primary Button</button>
@@ -240,7 +240,7 @@
         </pre>
 
       </div>
-      <div class="pd-1 mg-bottom-1">
+      <div class="pd-1 mg-bottom-1" id="card">
         <h3>Card</h3>
         <div class="card" style="width:18rem">
           <img class="card-image" src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
@@ -371,6 +371,155 @@
               &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;
           
+          </pre>
+          <h4>Cards with text overlay</h4>
+          <div class="card" style="width: 15rem;">
+            <img src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot" class="card-image">
+            <div class="card-text-overlay">
+              This is a text overlay card 
+            </div>
+          </div> 
+          <pre>
+            &#x3C;div class=&#x22;card&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+              &#x3C;img src="..." class=&#x22;card-image&#x22;&#x3E;
+              &#x3C;div class=&#x22;card-text-overlay&#x22;&#x3E;
+                This is a text overlay card 
+              &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E; 
+          </pre>
+          <h4>Text only cards</h4>
+          <div class="card card-body" style="width: 15rem;">
+            <div class="card-head">
+              hello title
+            </div>
+            <div class="card-md-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque ipsam.
+            </div>
+          </div>
+          <pre>
+            &#x3C;div class=&#x22;card card-body&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+              &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+              hello title
+              &#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore 
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+          </pre>
+          <h4>Horizontal card</h4>
+          <div class="card row" style="width:35rem">
+            <img class="card-image" src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
+            />
+            <div class="card-body" style="width: 25rem;">
+              <div class="card-head">Header</div>
+              <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo minima nam deleniti rem consequuntur eum, harum et dolores aspernatur ipsa libero vitae quasi, nostrum aliquam neque nobis assumenda voluptatem porro!</div>
+              <button class="btn-primary-md mg-top-1">Go Somewhere</button>
+            </div>
+          </div>
+          <pre>
+            &#x3C;div class=&#x22;card row&#x22; style=&#x22;width:35rem&#x22;&#x3E;
+              &#x3C;img class=&#x22;card-image&#x22; src="..." /&#x3E;
+              &#x3C;div class=&#x22;card-body&#x22; style=&#x22;width: 25rem;&#x22;&#x3E;
+                &#x3C;div class=&#x22;card-head&#x22;&#x3E;Header&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card-text&#x22;&#x3E;Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Nemo minima nam deleniti rem consequuntur eum, harum et dolores aspernatur ipsa libero vitae quasi, 
+                nostrum aliquam neque nobis assumenda voluptatem porro!&#x3C;/div&#x3E;
+              &#x3C;button class=&#x22;btn-primary-md mg-top-1&#x22;&#x3E;Go Somewhere&#x3C;/button&#x3E;
+              &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+          </pre>
+          <h4>card with shadow</h4>
+          <div class="grid-row2-col2" style="width: 40rem;">
+            <div class="card card-body card-shadow-1" style="width: 15rem;">
+              <div class="card-head">
+              Card shadow 1 title
+              </div>
+              <div class="card-md-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore 
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              </div>
+            </div>
+            <div class="card card-body card-shadow-2" style="width: 15rem;">
+              <div class="card-head">
+                Card shadow 2 title
+              </div>
+              <div class="card-md-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore 
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              </div>
+            </div>
+            <div class="card card-body card-shadow-3" style="width: 15rem;">
+              <div class="card-head">
+                Card shadow 3 title
+              </div>
+              <div class="card-md-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium i
+                nventore 
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              </div>
+            </div>
+            <div class="card card-body card-shadow-4" style="width: 15rem;">
+              <div class="card-head">
+                Card shadow 4 title
+              </div>
+              <div class="card-md-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium i
+                nventore 
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              </div>
+            </div>
+            
+          </div>
+          <pre>
+            &#x3C;div class=&#x22;card card-body card-shadow-1&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+              &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+              Card shadow 1 title
+              &#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inve
+                ntore 
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+
+            &#x3C;div class=&#x22;card card-body card-shadow-2&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+              &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+              Card shadow 2 title
+              &#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventor
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+
+            &#x3C;div class=&#x22;card card-body card-shadow-3&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+              &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+              Card shadow 3 title
+              &#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+
+            &#x3C;div class=&#x22;card card-body card-shadow-4&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+              &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+              Card shadow 4 title
+              &#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore 
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+            &#x3C;/div&#x3E;
           </pre>
         </div>
       </div>
