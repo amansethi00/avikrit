@@ -8,15 +8,15 @@
   font-family: "Inter", sans-serif;
   --font-family: "Inter", sans-serif;
   /* font-size var; */
-  --font-size--xsm: 10px;
-  --font-size-sm: 13px;
+  --font-size-xsm: 10px;
+  --font-size-sm: 12px;
   --font-size-md: 16px;
   --font-size-large: 20px;
   --font-size-xlg: 32px;
 
   /* font-weights var*/
   --font-weight-bold: 700;
-  --font-weight--bolder: 800;
+  --font-weight-bolder: 800;
   --font-weight-normal: 400;
   --font-weight-light: 200;
 

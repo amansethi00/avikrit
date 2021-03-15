@@ -9,6 +9,7 @@
   font-weight: var(--font-weight-md);
   margin-bottom: 0.5rem;
 }
+
 .card-body {
   padding: 1rem;
 }
@@ -19,6 +20,35 @@
 .card-badge {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+.card-badge-body {
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 2rem;
+  justify-content: flex-start;
+}
+.card-badge-head-lg {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+}
+.card-badge-head-md {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+}
+.card-badge-head-sm {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+.card-badge-text-lg {
+  font-size: var(--font-size-md);
+}
+.card-badge-text-md {
+  font-size: var(--font-size-md);
+}
+.card-badge-text-sm {
+  font-size: var(--font-size-sm);
 }
 .card-title {
   border-bottom: 1px solid black;
