@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atom Component Library</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="icon" type="image/svg+xml" href="./assets/molecule.svg">
-    <link rel="alternate icon" href="/favicon.ico">
+    <!-- <link rel="icon" type="image/svg+xml" href="./assets/molecule.svg"> -->
+    <link rel="alternate icon" href="/assets/molecule(1).ico">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
   </head>
   <body class="body">
@@ -21,7 +21,7 @@
       </div>
 
       <div class="bolder lg">Docs</div>
-      <div class="lg pd-right-2 flex row align-items-center">
+      <div class="lg  flex row align-items-center">
         <a class="btn-primary-md pd-0 mg-right-1" href="https://github.com/amansethi00/avikrit"><img src="./assets/github.svg" style="height: 1.6rem;width: 2rem;"></a>
         <a class="btn-primary-md pd-0 mg-1"  href="https://twitter.com/amansethi00" ><img src="./assets/twitter.svg" style="height: 2rem;width: 2rem;">  </a>
       </div>
@@ -553,6 +553,57 @@
             <li class="list-group-item">A fourth item</li>
             <li class="list-group-item">And a fifth one</li>
           </ul>
+          <pre>
+            &#x3C;ul class=&#x22;list-group&#x22;&#x3E;
+              &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;An item&#x3C;/li&#x3E;
+              &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;A second item&#x3C;/li&#x3E;
+              &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;A third item&#x3C;/li&#x3E;
+              &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;A fourth item&#x3C;/li&#x3E;
+              &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;And a fifth one&#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E; 
+          </pre>
+          <h4>actionable list using anchor tag</h4>
+          <p>Just add an "actionable" class to the list item to make it look more resonsive</p>
+          <ul class="list-group">
+            <a href="..." class="list-group-item actionable">An item actionable</a>
+            <a href="..." class="list-group-item actionable">A second item actionable</a>
+            <a href="..." class="list-group-item actionable">A third item actionable</a>
+            <a href="..." class="list-group-item actionable">A fourth item actionable</a>
+            <a href="..." class="list-group-item actionable">And a fifth one actionable</a>
+          </ul>
+          <pre>
+            &#x3C;ul class=&#x22;list-group&#x22;&#x3E;
+              &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;An item actionable&#x3C;/a&#x3E;
+              &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;A second item actionable&#x3C;/a&#x3E;
+              &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;A third item actionable&#x3C;/a&#x3E;
+              &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;A fourth item actionable&#x3C;/a&#x3E;
+              &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;And a fifth one actionable&#x3C;/a&#x3E;
+            &#x3C;/ul&#x3E;
+          </pre>
+          <h4>Normal list</h4>
+          <ul class="list-group">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo, sed in corrupti veniam officiis quam obcaecati itaque architecto sit fuga optio impedit nulla atque omnis, quae dolor quas commodi?</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque aut exercitationem sed ducimus nesciunt perferendis! Nesciunt beatae assumenda ipsam natus accusamus in, quis, ut, doloremque nam cupiditate porro ipsum odit?</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit saepe, repellendus voluptas accusantium exercitationem ducimus possimus magnam praesentium, odit iste excepturi repellat maiores illo aut laborum, dolorum odio maxime.
+            </li>
+          </ul>
+          <pre>
+            &#x3C;ul class=&#x22;list-group&#x22;&#x3E;
+              &#x3C;li&#x3E;Lorem ipsum...&#x3C;/li&#x3E;
+              &#x3C;li&#x3E;Lorem ipsum...&#x3C;/li&#x3E;
+              &#x3C;li&#x3E;Lorem ipsum...&#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+          </pre>
+        </div>
+        <div class="mg-bottom-1 pd-1">
+          <h3>Navigation</h3>
+          <nav class="nav">
+            <div class="nav-header">
+              <img src="assets/molecule.svg" style="height: 3rem;width: 3rem;">
+              <div class="nav-header-text">Header</div>
+              </div> 
+              <div class="nav-list">icon-1 icon-2 icon-3</div></nav>   
         </div>
       </div>
     </div>

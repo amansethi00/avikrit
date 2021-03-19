@@ -5,12 +5,28 @@
   display: flex;
   flex-flow: column wrap;
   padding-left: 0rem;
+  text-decoration: none;
+  list-style: none;
 }
+
 .list-group-item {
   list-style: none;
-  padding: 0.5rem 1rem;
+  text-decoration: none;
   border: 2px solid var(--secondary-color-hover);
+  padding: 0.5rem 1rem;
 }
 .list-group-item + .list-group-item {
   border-top-style: none;
+}
+.actionable:hover {
+  background-color: var(--primary-color-hover);
+  color: var(--white);
+}
+.list-group > a {
+  text-decoration: none;
+  font-style: none;
+  color: inherit;
+}
+.list-group > li {
+  padding: 0.5rem 1rem;
 }
