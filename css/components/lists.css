@@ -1,5 +1,16 @@
 @import "../utilities/utilities.css";
 
-.ls-none {
+.list-group {
+  border-radius: 4rem;
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 0rem;
+}
+.list-group-item {
   list-style: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--secondary-color-hover);
+}
+.list-group-item + .list-group-item {
+  border-top-style: none;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Avikrit Component Library</title>
+    <title>Atom Component Library</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" type="image/svg+xml" href="./assets/molecule.svg">
     <link rel="alternate icon" href="/favicon.ico">
@@ -15,9 +15,9 @@
     <nav
       class="nav pd-half pd-left-1 row justify-content-space-between align-items-center"
     >
-      <div class="col align-items-center">
-        <img src="./assets/molecule.svg" style="width: 3rem; height: 2rem" />
-        <div class="md bold">Avikrit</div>
+      <div class="col align-items-center justify-content-center">
+        <img src="./assets/molecule.svg" style="width: 3.8rem; height: 2rem" />
+        <div >Atom Ui</div>
       </div>
 
       <div class="bolder lg">Docs</div>
@@ -32,7 +32,7 @@
 
       <sidebar class=" sidebar ">
         <div class="pd-1 sidebar-text">
-          <a href="..." class="btn-secondary-md">Intro</a>
+          <a href="#intro" class="btn-secondary-md">Intro</a>
           <br>
           <a href="#avatar" class="btn-secondary-md">Avatar</a>
           <br>
@@ -42,11 +42,11 @@
           <br>
           <a href="#button" class="btn-secondary-md">Button</a>
           <br>  
-          <a href="#  card" class="btn-secondary-md">Card</a>
+          <a href="#card" class="btn-secondary-md">Card</a>
           <br>
-          <a href="..." class="btn-secondary-md">Card</a>
+          <a href="#input" class="btn-secondary-md">Input</a>
           <br>
-          <a href="..." class="btn-secondary-md">Card</a>
+          <a href="#list" class="btn-secondary-md">List</a>
           <br>
           <a href="..." class="btn-secondary-md">Card</a>
           <br>
@@ -72,10 +72,14 @@
         </div>
       
       </sidebar>
-    <div class="main pd-top-2 ">Looking to quickly add Avikrit to your project? Copy the following link tag in the html file ans start using
+    <div class="main pd-top-2 ">
+      <div class="pd-1" id="intro">
+        <h3>Intro</h3>
+        Looking to quickly add Avikrit to your project? Copy the following link tag in the html file and start using-
       <pre >
-        &#x3C;link rel=&#x22;stylesheet&#x22;  href=&#x22;https://avikrit.netlify.app/index.css&#x22;/&#x3E;
+        &#x3C;link rel=&#x22;stylesheet&#x22;  href=&#x22;https://atomcss.netlify.app/index.css&#x22;/&#x3E;
       </pre>
+      </div>
       <div class="pd-1 " id="avatar">
         <h3 >Avatar</h3>
         <div class="mg-bottom-1"><img
@@ -249,7 +253,7 @@
           >
           <div class="card-body">
             <div class="card-head">Header</div>
-            <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo minima nam deleniti rem consequuntur eum, harum et dolores aspernatur ipsa libero vitae quasi, nostrum aliquam neque nobis assumenda voluptatem porro!</div>
+            <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis nisi obcaecati facilis consequuntur quae ea! Nulla, rem. Ea perferendis illo exercitationem doloremque vel enim? At praesentium vero ullam aspernatur dolorem?</div>
             <button class="btn-primary-md mg-top-1">Go Somewhere</button>
           </div>
         </div>
@@ -257,9 +261,8 @@
           &#x3C;div class=&#x22;card&#x22; style=&#x22;width:18rem&#x22;&#x3E;
             &#x3C;img class=&#x22;card-image&#x22; src="..." div class=&#x22;card-body&#x22;&#x3E;
             &#x3C;div class=&#x22;card-head&#x22;&#x3E;Header&#x3C;/div&#x3E;
-            &#x3C;div class=&#x22;card-text&#x22;&#x3E;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                minima nam deleniti rem consequuntur eum, harum et dolores aspernatur ipsa libero vitae quasi, nostrum
-                aliquam neque nobis assumenda voluptatem porro!
+            &#x3C;div class=&#x22;card-text&#x22;&#x3E;
+            Lorem ipsum...
             &#x3C;/div&#x3E;
             &#x3C;button class=&#x22;btn-primary-md mg-top-1&#x22;&#x3E;Go Somewhere&#x3C;/button&#x3E;
             &#x3C;/div&#x3E;
@@ -296,10 +299,7 @@
               &#x3C;div class=&#x22;card-badge-head&#x22;&#x3E;Name&#x3C;/div&#x3E;
             &#x3C;/div&#x3E;
             &#x3C;p&#x3E;
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
-            vitae nemo maiores reprehenderit eaque, recusandae quaerat reiciendis
-            nihil, ut ducimus quidem officia maxime vero dolore facilis sequi
-            obcaecati porro provident?
+            Lorem ipsum...
             &#x3C;/p&#x3E;
           &#x3C;/div&#x3E;
         </pre>
@@ -404,9 +404,7 @@
               hello title
               &#x3C;/div&#x3E;
               &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore 
-                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
-                ipsam.
+                Lorem ipsum...
               &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;
           </pre>
@@ -416,7 +414,7 @@
             />
             <div class="card-body" style="width: 25rem;">
               <div class="card-head">Header</div>
-              <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo minima nam deleniti rem consequuntur eum, harum et dolores aspernatur ipsa libero vitae quasi, nostrum aliquam neque nobis assumenda voluptatem porro!</div>
+              <div class="card-text">Lorem, ipsum ...</div>
               <button class="btn-primary-md mg-top-1">Go Somewhere</button>
             </div>
           </div>
@@ -425,10 +423,10 @@
               &#x3C;img class=&#x22;card-image&#x22; src="..." /&#x3E;
               &#x3C;div class=&#x22;card-body&#x22; style=&#x22;width: 25rem;&#x22;&#x3E;
                 &#x3C;div class=&#x22;card-head&#x22;&#x3E;Header&#x3C;/div&#x3E;
-                &#x3C;div class=&#x22;card-text&#x22;&#x3E;Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Nemo minima nam deleniti rem consequuntur eum, harum et dolores aspernatur ipsa libero vitae quasi, 
-                nostrum aliquam neque nobis assumenda voluptatem porro!&#x3C;/div&#x3E;
-              &#x3C;button class=&#x22;btn-primary-md mg-top-1&#x22;&#x3E;Go Somewhere&#x3C;/button&#x3E;
+                &#x3C;div class=&#x22;card-text&#x22;&#x3E;Lorem, ipsum...&#x3C;/div&#x3E;
+              &#x3C;button class=&#x22;btn-primary-md mg-top-1&#x22;&#x3E;
+              Go Somewhere
+                &#x3C;/button&#x3E;
               &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;
           </pre>
@@ -484,10 +482,7 @@
               Card shadow 1 title
               &#x3C;/div&#x3E;
               &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inve
-                ntore 
-                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
-                ipsam.
+                Lorem ipsum...
               &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;
 
@@ -496,9 +491,7 @@
               Card shadow 2 title
               &#x3C;/div&#x3E;
               &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventor
-                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
-                ipsam.
+                Lorem ipsum...
               &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;
 
@@ -507,9 +500,7 @@
               Card shadow 3 title
               &#x3C;/div&#x3E;
               &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore
-                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
-                ipsam.
+                Lorem ipsum...
               &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;
 
@@ -518,11 +509,50 @@
               Card shadow 4 title
               &#x3C;/div&#x3E;
               &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore 
-                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
-                ipsam.
+                Lorem ipsum...
             &#x3C;/div&#x3E;
           </pre>
+        </div>
+        <div class="pd-1 mg-bottom-1" id="input">
+          <h3>Input</h3>
+          <div class="input-grp-sm">
+            <span class="input-grp-text" >Email</span>
+            <input class="input" placeholder="enter your email here"/>
+          </div>
+          <div class="input-grp-md">
+            <span class="input-grp-text">Email</span>
+            <input class="input"  placeholder="enter your email here"/>
+          </div>
+          <div class="input-grp-lg">
+            <span class="input-grp-text">Email</span>
+            <input class="input" placeholder="enter your email here"/>
+          </div>
+          <pre>
+            &lt;div class=&quot;input-grp-sm&quot;&gt;
+              &lt;span class=&quot;input-grp-text&quot; &gt;Email&lt;/span&gt;
+              &lt;input class=&quot;input&quot; placeholder=&quot;enter your email here&quot;/&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;input-grp-md&quot;&gt;
+              &lt;span class=&quot;input-grp-text&quot;&gt;Email&lt;/span&gt;
+              &lt;input class=&quot;input&quot;  placeholder=&quot;enter your email here&quot;/&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;input-grp-lg&quot;&gt;
+              &lt;span class=&quot;input-grp-text&quot;&gt;Email&lt;/span&gt;
+              &lt;input class=&quot;input&quot; placeholder=&quot;enter your email here&quot;/&gt;
+            &lt;/div&gt;
+          </pre>
+        </div>
+        <div class="pd-1 mg-bottom-1" id="list">
+          <h3>List</h3>
+          <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
         </div>
       </div>
     </div>
