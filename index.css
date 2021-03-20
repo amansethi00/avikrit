@@ -40,3 +40,8 @@ body {
   margin: auto;
   flex-shrink: 2;
 }
+.code {
+  height: 100% !important;
+  width: 50% !important;
+  min-width: 500px !important;
+}
