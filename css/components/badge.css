@@ -4,6 +4,18 @@
 .badge {
   position: relative;
 }
+.badge-sm {
+  position: relative;
+  height: 2.5rem;
+}
+.badge-md {
+  position: relative;
+  height: 4rem;
+}
+.badge-lg {
+  position: relative;
+  height: 5rem;
+}
 /* badge image icons */
 .badge-img-sm {
   height: 2rem;
