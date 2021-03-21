@@ -43,3 +43,6 @@ body {
 .code {
   width: 100%;
 }
+.code-container {
+  overflow: auto;
+}
