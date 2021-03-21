@@ -45,4 +45,5 @@ body {
 }
 .code-container {
   overflow: auto;
+  padding: 0.5rem;
 }
