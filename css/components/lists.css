@@ -8,14 +8,24 @@
   text-decoration: none;
   list-style: none;
 }
-
+.list-group-normal {
+  border-radius: 4rem;
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 0rem;
+  text-decoration: none;
+  list-style: none;
+}
+.list-group-normal > .list-group-item {
+  margin: 0.5rem 0rem;
+}
 .list-group-item {
   list-style: none;
   text-decoration: none;
   border: 2px solid var(--secondary-color-hover);
   padding: 0.5rem 1rem;
 }
-.list-group-item + .list-group-item {
+.list-group > .list-group-item + .list-group-item {
   border-top-style: none;
 }
 .actionable:hover {

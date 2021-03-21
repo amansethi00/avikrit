@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Component Html</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="prism.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.0/styles/monokai.min.css"  />    
 
   </head>
@@ -431,6 +432,7 @@ sandbox="allow-scripts allow-same-origin">
 </iframe>
 <div class="code-container">
   <pre>
+    <code class="language-html">
       &#x3C;ul class=&#x22;list-group&#x22;&#x3E;
       &#x3C;li&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo, sed in corrupti veniam officiis quam obcaecati itaque architecto sit fuga optio impedit nulla atque omnis, quae dolor quas commodi?&#x3C;/li&#x3E;
       &#x3C;li&#x3E;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque aut exercitationem sed ducimus nesciunt perferendis! Nesciunt beatae assumenda ipsam natus accusamus in, quis, ut, doloremque nam cupiditate porro ipsum od it?&#x3C;/li&#x3E;
@@ -438,11 +440,14 @@ sandbox="allow-scripts allow-same-origin">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit saepe, repellendus voluptas accusantium exercitationem ducimus possimus magnam praesentium, odit iste excepturi repellat maiores illo aut laborum, dolorum odio maxime.
       &#x3C;/li&#x3E;
     &#x3C;/ul&#x3E;
+    <li>
+    </li>
+  </code>
 </pre>
 <div class="code-container">
   <pre>
   
-    <code class="javascript">
+    <code class="language-javascript">
       document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelectorAll('pre code').forEach((block) => {
           hljs.highlightBlock(block);
@@ -454,6 +459,5 @@ sandbox="allow-scripts allow-same-origin">
 </div>
 
 </div>
-<script src="/path/to/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>  </body>
+<script src="./prism.js"></script>
 </html>

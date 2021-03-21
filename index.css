@@ -41,7 +41,7 @@ body {
   flex-shrink: 2;
 }
 .code {
-  width: 100%;
+  width: 100vh;
 }
 .code-container {
   overflow: auto;

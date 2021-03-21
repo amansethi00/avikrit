@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atom Component Library</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="prism.css" />
     <!-- <link rel="icon" type="image/svg+xml" href="./assets/molecule.svg"> -->
     <link rel="alternate icon" href="/assets/molecule(1).ico">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
@@ -13,17 +14,17 @@
   <body class="body">
 
     <nav
-      class="nav pd-half pd-left-1 row justify-content-space-between align-items-center"
+      class="nav"
     >
-      <div class="col align-items-center justify-content-center">
+      <div class="nav-left">
         <img src="./assets/molecule.svg" style="width: 3.8rem; height: 2rem" />
-        <div >Atom Ui</div>
+        <span class="nav-items">Home</span>
+        <span class="nav-items nav-item-active">Docs</span>
       </div>
-
-      <div class="bolder lg">Docs</div>
-      <div class="lg  flex row align-items-center">
-        <a class="btn-primary-md pd-0 mg-right-1" href="https://github.com/amansethi00/avikrit"><img src="./assets/github.svg" style="height: 1.6rem;width: 2rem;"></a>
-        <a class="btn-primary-md pd-0 mg-1"  href="https://twitter.com/amansethi00" ><img src="./assets/twitter.svg" style="height: 2rem;width: 2rem;">  </a>
+      
+      <div class="nav-right">
+        <a href="https://github.com/amansethi00/avikrit"><img src="./assets/github.svg" class="nav-socials"></a>
+        <a class="nav-socials"  href="https://twitter.com/amansethi00" ><img src="./assets/twitter.svg" class="nav-socials">  </a>
       </div>
       
       </div>
@@ -76,17 +77,13 @@
       <div class="pd-1" id="intro">
         <h3>Intro</h3>
         Looking to quickly add Avikrit to your project? Copy the following link tag in the html file and start using-
-      <!-- <pre >
-        &#x3C;link rel=&#x22;stylesheet&#x22;  href=&#x22;https://atomcss.netlify.app/index.css&#x22;/&#x3E;
-      </pre> -->
       <div class="code">
-        <iframe
-        src="https://carbon.now.sh/embed/kbZJ7tTR22qIFPfYgIQz"
-        style="width: 100%; height: 93px; border:0; transform: scale(1); overflow:hidden;"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
+        <pre >
+          <code class="language-html">
+            &#x3C;link rel=&#x22;stylesheet&#x22;  href=&#x22;https://atomcss.netlify.app/index.css&#x22;/&#x3E;
+          </code>
+        </pre>
       </div>
-
       </div>
       <div class="pd-1 " id="avatar">
         <h3 >Avatar</h3>
@@ -110,11 +107,16 @@
         </div>
         </div>
         <div class="code">
-          <iframe
-          src="https://carbon.now.sh/embed/CCwujYVSuSWH4JtlCTj2"
-          style="width: 100%; height: 353px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+          <pre>
+            <code class="language-html">
+              &#x3C;img src=&#x22;...&#x22; class=&#x22;avatar-lg&#x22; /&#x3E;
+            
+              &#x3C;img src=&#x22;...&#x22; class=&#x22;avatar-md&#x22; /&#x3E;
+                       
+              &#x3C;img src=&#x22;...&#x22; class=&#x22;avatar-sm&#x22; /&#x3E;
+                       
+            </code>
+          </pre>
         </div>
 
         
@@ -126,42 +128,34 @@
           <div class="alert-text">Danger alert</div>
           <img class="alert-image" src="./assets/x-mark.svg">
         </div>
-        <!-- <pre class="mg-bottom-1">
-          &#x3C;div class=&#x22;alert-red &#x22;&#x3E;
-            &#x3C;div class=&#x22;alert-text&#x22;&#x3E;Danger alert&#x3C;/div&#x3E;
-            &#x3C;img class=&#x22;alert-image&#x22; src=&#x22;./assets/x-mark.svg&#x22;&#x3E;
-          &#x3C;/div&#x3E;
-        </pre> -->
         <div class="alert-green mg-bottom-1">
           <div class="alert-text">Green alert</div>
           <img class="alert-image" src="./assets/x-mark.svg">
-        </div>
-        <!-- <pre class="mg-bottom-1">
-          &#x3C;div class=&#x22;alert-green &#x22;&#x3E;
-            &#x3C;div class=&#x22;alert-text&#x22;&#x3E;Green alert&#x3C;/div&#x3E;
-            &#x3C;img class=&#x22;alert-image&#x22; src=&#x22;./assets/x-mark.svg&#x22;&#x3E;
-          &#x3C;/div&#x3E;
-        </pre> -->
-        
+        </div>        
         <div class="alert mg-bottom-1">
           <div class="alert-text">Some alert</div>
           <img class="alert-image" src="./assets/x-mark.svg">
         </div>
-        <!-- <pre >
-          &#x3C;div class=&#x22;alert &#x22;&#x3E;
-            &#x3C;div class=&#x22;alert-text&#x22;&#x3E;Some alert&#x3C;/div&#x3E;
-            &#x3C;img class=&#x22;alert-image&#x22; src=&#x22;./assets/x-mark.svg&#x22;&#x3E;
-          &#x3C;/div&#x3E;
-        </pre>   -->
         <div class="code">
-          <iframe
-          src="https://carbon.now.sh/embed/E1YP8QQnqxfFRrmW9J7i"
-          style="width: 569px; height: 353px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
-        </div>
-        
+          <pre>
+            <code class="language-html">
+              &#x3C;div class=&#x22;alert-red &#x22;&#x3E;
+                &#x3C;div class=&#x22;alert-text&#x22;&#x3E;Danger alert&#x3C;/div&#x3E;
+                &#x3C;img class=&#x22;alert-image&#x22; src=&#x22;./assets/x-mark.svg&#x22;&#x3E;
+              &#x3C;/div&#x3E;
 
+              &#x3C;div class=&#x22;alert-green &#x22;&#x3E;
+                &#x3C;div class=&#x22;alert-text&#x22;&#x3E;Green alert&#x3C;/div&#x3E;
+                &#x3C;img class=&#x22;alert-image&#x22; src=&#x22;./assets/x-mark.svg&#x22;&#x3E;
+              &#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;alert &#x22;&#x3E;
+              &#x3C;div class=&#x22;alert-text&#x22;&#x3E;Some alert&#x3C;/div&#x3E;
+              &#x3C;img class=&#x22;alert-image&#x22; src=&#x22;./assets/x-mark.svg&#x22;&#x3E;
+            &#x3C;/div&#x3E;
+            </code>
+          </pre>
+        </div>
       </div>
       <div class="pd-1 mg-bottom-1" id="badge" style="width: 20rem;">
         <h3>Badge</h3>
@@ -171,39 +165,33 @@
             <img src="./assets/home.svg" class="badge-img-sm" />
             <span class="badge-text-sm " >41</span>
           </div>
-          <!-- <pre class="mg-bottom-1">
-            &#x3C;div class=&#x22;badge&#x22;&#x3E;
-              &#x3C;img src=&#x22;./assets/home.svg&#x22; class=&#x22;badge-img-sm&#x22; /&#x3E;
-              &#x3C;span class=&#x22;badge-text-sm&#x22;&#x3E;42&#x3C;/span&#x3E;
-            &#x3C;/div&#x3E;
-          </pre> -->
           <div class="badge-md">
             <img src="./assets/home.svg" class="badge-img-md" />
             <span class="badge-text-md">42</span>
           </div>
-          <!-- <pre class="mg-bottom-1">
-            &#x3C;div class=&#x22;badge&#x22;&#x3E;
-              &#x3C;img src=&#x22;./assets/home.svg&#x22; class=&#x22;badge-img-md&#x22; /&#x3E;
-              &#x3C;span class=&#x22;badge-text-md&#x22;&#x3E;42&#x3C;/span&#x3E;
-            &#x3C;/div&#x3E;
-          </pre> -->
           <div class="badge-lg">
             <img src="./assets/home.svg" class="badge-img-lg" />
             <span class="badge-text-lg">42</span>
           </div>
-          <!-- <pre class="mg-bottom-1">
+        </div>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+              &#x3C;div class=&#x22;badge&#x22;&#x3E;
+              &#x3C;img src=&#x22;./assets/home.svg&#x22; class=&#x22;badge-img-sm&#x22; /&#x3E;
+              &#x3C;span class=&#x22;badge-text-sm&#x22;&#x3E;42&#x3C;/span&#x3E;
+
+              &#x3C;div class=&#x22;badge&#x22;&#x3E;
+              &#x3C;img src=&#x22;./assets/home.svg&#x22; class=&#x22;badge-img-md&#x22; /&#x3E;
+              &#x3C;span class=&#x22;badge-text-md&#x22;&#x3E;42&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+
             &#x3C;div class=&#x22;badge&#x22;&#x3E;
               &#x3C;img src=&#x22;./assets/home.svg&#x22; class=&#x22;badge-img-lg&#x22; /&#x3E;
               &#x3C;span class=&#x22;badge-text-lg&#x22;&#x3E;42&#x3C;/span&#x3E;
             &#x3C;/div&#x3E;
-          </pre> -->
-        </div>
-        <div class="code">
-        <iframe
-          src="https://carbon.now.sh/embed/LG1mxGoD0MJAe3Tnh9A7"
-          style="width: 578px; height: 353px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+            </code>
+          </pre>
         </div>
         <h4>Badge on avatar</h4>
           <div class="flex row-reverse align-items-center justify-content-space-between">
@@ -211,15 +199,9 @@
             <img
             src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
             class="avatar-sm"
-          />
-          <span class="badge-avatar-text-sm ">41</span>
-        </div>
-        <!-- <pre class="mg-bottom-1">
-          &#x3C;div class=&#x22;badge&#x22;&#x3E;
-            &#x3C;img src="..." class=&#x22;avatar-sm&#x22;/&#x3E;
-            &#x3C;span class=&#x22;badge-avatar-text-sm &#x22;&#x3E;41&#x3C;/span&#x3E;
-          &#x3C;/div&#x3E;
-        </pre> -->
+            />
+            <span class="badge-avatar-text-sm ">41</span>
+            </div>
         <div class="badge">
           <img
             src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
@@ -227,12 +209,6 @@
           />
           <span class="badge-avatar-text-md">41</span>
         </div>
-        <!-- <pre >
-          &#x3C;div class=&#x22;badge&#x22;&#x3E;
-            &#x3C;img src="..." class=&#x22;avatar-md&#x22;/&#x3E;
-            &#x3C;span class=&#x22;badge-avatar-text-md&#x22;&#x3E;41&#x3C;/span&#x3E;
-          &#x3C;/div&#x3E;
-        </pre> -->
         <div class="badge">
           <img
             src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
@@ -240,21 +216,27 @@
           />
           <span class="badge-avatar-text-lg">41</span>
         </div>
-        <!-- <pre >
-          &#x3C;div class=&#x22;badge&#x22;&#x3E;
+      </div>
+      <div class="code">
+        <pre >
+          <code class="language-html">
+            &#x3C;div class=&#x22;badge&#x22;&#x3E;
             &#x3C;img src="..." class=&#x22;avatar-lg&#x22;/&#x3E;
             &#x3C;span class=&#x22;badge-avatar-text-lg&#x22;&#x3E;41&#x3C;/span&#x3E;
           &#x3C;/div&#x3E;
-        </pre> -->
-          </div>
-        <div class="code">
-          <iframe
-          src="https://carbon.now.sh/embed/gaFcJ42hFcHcLeXCMnqW"
-          style="width: 519px; height: 335px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
-        </div>
-        
+
+          &#x3C;div class=&#x22;badge&#x22;&#x3E;
+            &#x3C;img src="..." class=&#x22;avatar-md&#x22;/&#x3E;
+            &#x3C;span class=&#x22;badge-avatar-text-md&#x22;&#x3E;41&#x3C;/span&#x3E;
+          &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;badge&#x22;&#x3E;
+          &#x3C;img src="..." class=&#x22;avatar-sm&#x22;/&#x3E;
+          &#x3C;span class=&#x22;badge-avatar-text-sm &#x22;&#x3E;41&#x3C;/span&#x3E;
+        &#x3C;/div&#x3E;
+          </code>
+        </pre>
+      </div>
       </div>
       <div class="pd-1 mg-bottom-1" id="button">
         <h3>Button</h3>        
@@ -268,30 +250,30 @@
         <br/>
         <br/>
         <div class="code">
-          <iframe
-            src="https://carbon.now.sh/embed/kOdcVXtbKU5uNGYTycIL"
-            style="width: 578px; height: 148px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-         </iframe>
+          <pre>
+            <code class="language-html">
+              &#x3C;button class=&#x22;btn-primary-lg&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;
+              &#x3C;button class=&#x22;btn-primary-md&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;
+              &#x3C;button class=&#x22;btn-primary-sm&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;    
+            </code>
+          </pre>
         </div>
         
         <br/>
         <button class="btn-secondary-lg">secondary Button</button>
         <button class="btn-secondary-md">secondary Button</button>
         <button class="btn-secondary-sm">secondary Button</button>
-        <!-- <pre>
-          &#x3C;button class=&#x22;btn-secondary-lg&#x22;&#x3E;secondary Button&#x3C;/button&#x3E;
-          &#x3C;button class=&#x22;btn-secondary-md&#x22;&#x3E;secondary Button&#x3C;/button&#x3E;
-          &#x3C;button class=&#x22;btn-secondary-sm&#x22;&#x3E;secondary Button&#x3C;/button&#x3E;
-        </pre> -->
+       
         <br/>
         <br/>
         <div class="code">
-          <iframe
-            src="https://carbon.now.sh/embed/7PcXZzqQqiPl6JEvpksA"
-            style="width: 611px; height: 130px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
+          <pre>
+            <code class="language-html">
+              &#x3C;button class=&#x22;btn-secondary-lg&#x22;&#x3E;secondary Button&#x3C;/button&#x3E;
+              &#x3C;button class=&#x22;btn-secondary-md&#x22;&#x3E;secondary Button&#x3C;/button&#x3E;
+              &#x3C;button class=&#x22;btn-secondary-sm&#x22;&#x3E;secondary Button&#x3C;/button&#x3E;
+            </code>
+          </pre>
         </div>
         
         <br/>
@@ -299,43 +281,25 @@
         <br/>
         <a href="..." class="btn-primary-md">Link Button</a>
         <a href="..." class="btn-secondary-md">Link Button</a>
-        <!-- <pre>
-          &#x3C;a href=&#x22;&#x22; class=&#x22;btn-primary-md&#x22;&#x3E;Link Button&#x3C;/a&#x3E;
-          &#x3C;a href=&#x22;&#x22; class=&#x22;btn-secondary-md&#x22;&#x3E;Link Button&#x3C;/a&#x3E;
-        </pre> -->
         <br/>
         <br/>
         <div class="code">
-          <iframe
-            src="https://carbon.now.sh/embed/CiQc8aZV7G5oOMt8ivKA"
-            style="width: 561px; height: 111px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
+          <pre>
+            <code class="language-html">
+              &#x3C;a href=&#x22;&#x22; class=&#x22;btn-primary-md&#x22;&#x3E;Link Button&#x3C;/a&#x3E;
+              &#x3C;a href=&#x22;&#x22; class=&#x22;btn-secondary-md&#x22;&#x3E;Link Button&#x3C;/a&#x3E;
+            </code>
+          </pre>
         </div>
-        
-        <br/>
         <button class="btn-floating right-1rem bottom-1rem">fab</button>
         floating action button(fab)
         <br/>
         <br/>
-        <div class="code">
-          <iframe
-            src="https://carbon.now.sh/embed/jcGAJ92NFmyMWVNeLCAL"
-            style="width: 578px; height: 93px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
-        
-
-        <!-- <pre>
-          &#x3C;button class=&#x22;btn-floating&#x22;&#x3E;fab&#x3C;/button&#x3E;
-        </pre> -->
-
       </div>
       <div class="pd-1 mg-bottom-1" id="card">
         <h3>Card</h3>
         <div class="card" style="width:18rem">
-          <img class="card-image" src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
+            <img class="card-image" src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
           >
           <div class="card-body">
             <div class="card-head">Header</div>
@@ -343,26 +307,22 @@
             <button class="btn-primary-md mg-top-1">Go Somewhere</button>
           </div>
         </div>
-        <!-- <pre>
-          &#x3C;div class=&#x22;card&#x22; style=&#x22;width:18rem&#x22;&#x3E;
-            &#x3C;img class=&#x22;card-image&#x22; src="..." div class=&#x22;card-body&#x22;&#x3E;
-            &#x3C;div class=&#x22;card-head&#x22;&#x3E;Header&#x3C;/div&#x3E;
-            &#x3C;div class=&#x22;card-text&#x22;&#x3E;
-            Lorem ipsum...
-            &#x3C;/div&#x3E;
-            &#x3C;button class=&#x22;btn-primary-md mg-top-1&#x22;&#x3E;Go Somewhere&#x3C;/button&#x3E;
-            &#x3C;/div&#x3E;
-          &#x3C;/div&#x3E;
-        </pre> -->
         <div class="code">
-          <iframe
-            src="https://carbon.now.sh/embed/PhmtUKcAE2nS9h2GqDPG"
-            style="width: 654px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
+          <pre>
+            <code class="language-html">
+              &#x3C;div class=&#x22;card&#x22; style=&#x22;width:18rem&#x22;&#x3E;
+              &#x3C;img class=&#x22;card-image&#x22; src="..." div class=&#x22;card-body&#x22;&#x3E;
+              &#x3C;div class=&#x22;card-head&#x22;&#x3E;Header&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;card-text&#x22;&#x3E;
+              Lorem ipsum...
+              &#x3C;/div&#x3E;
+              &#x3C;button class=&#x22;btn-primary-md mg-top-1&#x22;&#x3E;Go Somewhere&#x3C;/button&#x3E;
+              &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            </code>
+          </pre>
         </div>
-        
-
+        <br/>
         <div class="card card-body" style="width: 15rem">
           <div
             class="card-badge"
@@ -382,14 +342,26 @@
             obcaecati porro provident?
           </p>
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed/Gv0Rx6MCQK4KADN5M2Cn"
-          style="width: 536px; height: 335px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
-
-        
-
+        <div class="code">
+          <pre>
+            <code class="language-html">
+              &#x3C;div class=&#x22;card card-body&#x22; style=&#x22;width: 15rem&#x22;&#x3E;
+              &#x3C;div
+              class=&#x22;card-badge-head-lg&#x22;
+              style=&#x22;width: 100%&#x22;
+              &#x3E;
+                &#x3C;img
+                src=&#x22;...&#x22; class=&#x22;avatar-lg&#x22;
+                /&#x3E;
+                &#x3C;div class=&#x22;card-badge-head&#x22;&#x3E;Name&#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+              &#x3C;p&#x3E;
+              Lorem ipsum...
+              &#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            </code>
+          </pre>
+        </div>
         <div class="pd-1">
           cards with badges
           <div class="card card-badge card-body" style="width: 15rem;">
@@ -424,11 +396,42 @@
             </div>           
           </div>
           <div class="code">
-            <iframe
-              src="https://carbon.now.sh/embed/zBiLzOW2FZVC9vnRtK1c"
-              style="width: 654px; min-height: 670px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card card-badge card-body&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                &#x3C;div class=&#x22;badge&#x22;&#x3E;
+                  &#x3C;img src=... class=&#x22;avatar-lg&#x22;/&#x3E;
+                  &#x3C;span class=&#x22;badge-avatar-text-lg&#x22;&#x3E;41&#x3C;/span&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card-badge-body&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-badge-head-lg&#x22;&#x3E;Hello&#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-badge-text-lg&#x22;&#x3E;Some message&#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+  
+              &#x3C;div class=&#x22;card card-badge card-body&#x22; style=&#x22;width: 12rem;&#x22;&#x3E;
+                &#x3C;div class=&#x22;badge&#x22;&#x3E;
+                  &#x3C;img src=... class=&#x22;avatar-md&#x22;/&#x3E;
+                  &#x3C;span class=&#x22;badge-avatar-text-md&#x22;&#x3E;41&#x3C;/span&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card-badge-body&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-badge-head-md&#x22;&#x3E;Hello&#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-badge-text-md&#x22;&#x3E;Some msg &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+  
+              &#x3C;div class=&#x22;card card-badge card-body&#x22; style=&#x22;width: 8rem;&#x22;&#x3E;
+                &#x3C;div class=&#x22;badge&#x22;&#x3E;
+                  &#x3C;img src=... class=&#x22;avatar-sm&#x22;/&#x3E;
+                  &#x3C;span class=&#x22;badge-avatar-text-sm&#x22;&#x3E;41&#x3C;/span&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card-badge-body&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-badge-head-sm&#x22;&#x3E;Hello&#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-badge-text-sm&#x22;&#x3E;Some msg &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+              </code>
+            </pre>
           </div>
 
           <h4>Cards with text overlay</h4>
@@ -439,11 +442,16 @@
             </div>
           </div> 
           <div class="code">
-            <iframe
-              src="https://carbon.now.sh/embed/Q4v826dA5UjIW3X6YMVo"
-              style="width: 569px; height:353px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                &#x3C;img src=&#x22;...&#x22; class=&#x22;card-image&#x22;&#x3E;
+                &#x3C;div class=&#x22;card-text-overlay&#x22;&#x3E;
+                  This is a text overlay card 
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E; 
+              </code>
+            </pre>
           </div>
 
           <h4>Text only cards</h4>
@@ -456,11 +464,18 @@
             </div>
           </div>
           <div class="code">
-            <iframe
-              src="https://carbon.now.sh/embed/jHYDQ0pLSETvlEO20lLc"
-              style="width: 561px; height: 223px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card card-body&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+                  hello title
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                    Lorem ipsum...
+                  &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+              </code>
+            </pre>
           </div>
 
 
@@ -475,15 +490,22 @@
             </div>
           </div>
           <div class="code">
-            <iframe
-            src="https://carbon.now.sh/embed/UbDAQ3TjNS0GfmlCIsKH"
-            style="max-width:700px; height: auto; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
+            <pre>
+              <code class="language-html">
+                &#x9;&#x9;&#x3C;div class=&#x22;card row&#x22; style=&#x22;width:35rem&#x22;&#x3E;
+                &#x3C;img class=&#x22;card-image&#x22; src=&#x22;...&#x22;/&#x3E;
+                &#x3C;div class=&#x22;card-body&#x22; style=&#x22;width: 25rem;&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-head&#x22;&#x3E;Header&#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-text&#x22;&#x3E;Lorem, ipsum ...&#x3C;/div&#x3E;
+                  &#x3C;button class=&#x22;btn-primary-md mg-top-1&#x22;&#x3E;Go Somewhere&#x3C;/button&#x3E;
+                &#x3C;/div&#x3E;
+                &#x9;&#x9;&#x3C;/div&#x3E;
+              </code>
+            </pre>
           </div>
 
           <h4>card with shadow</h4>
-          <div class="grid-row2-col2" style="max-width: 40rem;">
+          <div class="" style="max-width: 40rem;">
             <div class="card card-body card-shadow-1" style="width: 15rem;">
               <div class="card-head">
               Card shadow 1 title
@@ -529,11 +551,45 @@
             
           </div>
           <div class="code">
-            <iframe
-                src="https://carbon.now.sh/embed/PCf7JKsYWZe3lED7qa0I"
-                style="max-width:700px; min-height: 750px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card card-body card-shadow-1&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+                  Card shadow 1 title
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                    Lorem ipsum ...
+                  &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+
+                &#x3C;div class=&#x22;card card-body card-shadow-2&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+                    Card shadow 2 title
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                    Lorem ipsum...
+                  &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+
+                &#x3C;div class=&#x22;card card-body card-shadow-3&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+                    Card shadow 3 title
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                    Lorem ipsum...
+                  &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+
+                &#x3C;div class=&#x22;card card-body card-shadow-4&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+                    Card shadow 4 title
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                    Lorem ipsum...
+                  &#x3C;/div&#x3E;
+                
+              </code>
+            </pre>
           </div>
           
         </div>
@@ -551,11 +607,26 @@
             <span class="input-grp-text">Email</span>
             <input class="input" placeholder="enter your email here"/>
           </div>
-          <iframe
-          src="https://carbon.now.sh/embed/CHgqZ9Urr3SChHrZ70Fn"
-          style="max-width:700px; min-height: 335px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>    
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;input-grp-sm&#x22;&#x3E;
+                &#x3C;span class=&#x22;input-grp-text&#x22; &#x3E;Email&#x3C;/span&#x3E;
+                &#x3C;input class=&#x22;input&#x22; placeholder=&#x22;enter your email here&#x22;/&#x3E;
+              &#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;input-grp-md&#x22;&#x3E;
+                &#x3C;span class=&#x22;input-grp-text&#x22;&#x3E;Email&#x3C;/span&#x3E;
+                &#x3C;input class=&#x22;input&#x22;  placeholder=&#x22;enter your email here&#x22;/&#x3E;
+              &#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;input-grp-lg&#x22;&#x3E;
+                &#x3C;span class=&#x22;input-grp-text&#x22;&#x3E;Email&#x3C;/span&#x3E;
+                &#x3C;input class=&#x22;input&#x22; placeholder=&#x22;enter your email here&#x22;/&#x3E;
+              &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>    
         </div>
         <div class="pd-1 mg-bottom-1" id="list">
           <h3>List</h3>
@@ -567,11 +638,17 @@
             <li class="list-group-item">And a fifth one</li>
           </ul>        
           <div class="code">
-            <iframe
-              src="https://carbon.now.sh/embed/BozNIopOmIM2Wx3NcBSq"
-              style="max-width:700px; height: auto; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <pre>
+              <code class="language-html">
+                &#x3C;ul class=&#x22;list-group&#x22;&#x3E;
+                &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;An item&#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;A second item&#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;A third item&#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;A fourth item&#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;And a fifth one&#x3C;/li&#x3E;
+              &#x3C;/ul&#x3E;   
+              </code>
+            </pre>
           </div>
           
           <h4>actionable list using anchor tag</h4>
@@ -584,42 +661,50 @@
             <a href="..." class="list-group-item actionable">And a fifth one actionable</a>
           </ul>
           <div class="code">
-            <iframe
-              src="https://carbon.now.sh/embed/MhJWuYQKPCym6zLpYnfJ"
-              style="max-width:700px; height: 223px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <pre>
+              <code class="language-html">
+                &#x3C;ul class=&#x22;list-group&#x22;&#x3E;
+            &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;An item actionable&#x3C;/a&#x3E;
+            &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;A second item actionable&#x3C;/a&#x3E;
+            &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;A third item actionable&#x3C;/a&#x3E;
+            &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;A fourth item actionable&#x3C;/a&#x3E;
+            &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;And a fifth one actionable&#x3C;/a&#x3E;
+          &#x3C;/ul&#x3E;
+              </code>
+            </pre>
           </div>
 
 
           <h4>Normal list</h4>
-          <ul class="list-group">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo, sed in corrupti veniam officiis quam obcaecati itaque architecto sit fuga optio impedit nulla atque omnis, quae dolor quas commodi?</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque aut exercitationem sed ducimus nesciunt perferendis! Nesciunt beatae assumenda ipsam natus accusamus in, quis, ut, doloremque nam cupiditate porro ipsum odit?</li>
-            <li>
+          <ul class="list-group-normal">
+            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo, sed in corrupti veniam officiis quam obcaecati itaque architecto sit fuga optio impedit nulla atque omnis, quae dolor quas commodi?</li>
+            <li class="list-group-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque aut exercitationem sed ducimus nesciunt perferendis! Nesciunt beatae assumenda ipsam natus accusamus in, quis, ut, doloremque nam cupiditate porro ipsum odit?</li>
+            <li class="list-group-item">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit saepe, repellendus voluptas accusantium exercitationem ducimus possimus magnam praesentium, odit iste excepturi repellat maiores illo aut laborum, dolorum odio maxime.
             </li>
           </ul>
           <div class="code">
-            <iframe
-            src="https://carbon.now.sh/embed/ECcEbWFVucGWoOefrVsn"
-            style="max-width:700px; height: 418px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
+            <pre>
+              <code class="language-html">
+                &#x3C;ul class=&#x22;list-group-normal&#x22;&#x3E;
+                &#x3C;li class="list-group-item" &#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo, sed in corrupti veniam officiis quam obcaecati itaque architecto sit fuga optio impedit nulla atque omnis, quae dolor quas commodi?&#x3C;/li&#x3E;
+                &#x3C;li class="list-group-item"&#x3E;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque aut exercitationem sed ducimus nesciunt perferendis! Nesciunt beatae assumenda ipsam natus accusamus in, quis, ut, doloremque nam cupiditate porro ipsum odit?&#x3C;/li&#x3E;
+                &#x3C;li class="list-group-item"&#x3E;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit saepe, repellendus voluptas accusantium exercitationem ducimus possimus magnam praesentium, odit iste excepturi repellat maiores illo aut laborum, dolorum odio maxime.
+                &#x3C;/li&#x3E;
+              &#x3C;/ul&#x3E;
+              </code>
+            </pre>
           </div>
 
         </div>
         <div class="mg-bottom-1 pd-1">
           <h3>Navigation</h3>
-          <nav class="nav">
-            <div class="nav-header">
-              <img src="assets/molecule.svg" style="height: 3rem;width: 3rem;">
-              <div class="nav-header-text">Header</div>
-              </div> 
-              <div class="nav-list">icon-1 icon-2 icon-3</div></nav>   
         </div>
+
       </div>
     </div>
   </div>
+  <script src="./prism.js"></script>
   </body>
 </html>

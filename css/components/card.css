@@ -2,6 +2,7 @@
 
 .card-image {
   width: 100%;
+  height: 100%;
 }
 .card-head {
   padding-top: 0.8rem;
@@ -16,6 +17,7 @@
 .card {
   position: relative;
   border: 1px solid var(--light-gray);
+  border-radius: 0.5rem;
 }
 .card-badge {
   display: flex;
