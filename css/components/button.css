@@ -27,7 +27,7 @@ button {
   background-color: var(--primary-color);
   color: var(--white);
   font-size: var(--font-size-sm);
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 1rem;
   text-decoration: none;
 }
@@ -55,7 +55,7 @@ button {
   /* background-color: var(--primary-color); */
   color: var(--primary-color);
   font-size: var(--font-size-sm);
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 1rem;
   text-decoration: none;
 }
