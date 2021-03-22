@@ -38,9 +38,13 @@
 }
 .nav-right {
   padding-right: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 .nav-socials {
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 1.4rem;
+  width: 1.4rem;
   padding: 0rem 0.25rem;
 }

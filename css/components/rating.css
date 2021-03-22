@@ -1,0 +1,23 @@
+@import "../utilities/utilities.css";
+
+.rating-head {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.rating-counter {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--white);
+  margin-right: 1rem;
+}
+.rating-head-text {
+  font-weight: var(--font-weight-bold);
+}
+.rating-footer {
+  color: var(--gray);
+  font-size: var(--font-size-sm);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
