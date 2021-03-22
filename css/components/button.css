@@ -62,7 +62,8 @@ button {
 .btn-secondary-lg:hover,
 .btn-secondary-md:hover,
 .btn-secondary-sm:hover {
-  background-color: var(--secondary-color-hover);
+  background-color: var(--primary-color-hover);
+  color: var(--white);
 }
 
 .btn-floating {
