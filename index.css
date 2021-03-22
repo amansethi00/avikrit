@@ -47,3 +47,18 @@ body {
   overflow: auto;
   padding: 0.5rem;
 }
+@media screen and (max-width: 650px) {
+  .container {
+    display: flex;
+    width: 100%;
+    /* grid-template-columns: 1fr 4fr;
+    grid-template-areas: "sidebar main ";
+    gap: 0.5rem; */
+  }
+  .sidebar {
+    display: none;
+  }
+  .code {
+    width: 70vh;
+  }
+}

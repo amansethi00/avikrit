@@ -62,7 +62,7 @@ html {
   font-size: var(--font-size-sm);
 }
 .xsm {
-  font-size: var(--font-size--xsm);
+  font-size: var(--font-size-xsm);
 }
 .xlg {
   font-size: var(--font-size-xlg);
@@ -73,7 +73,10 @@ html {
   font-weight: var(--font-weight-bold);
 }
 .bolder {
-  font-weight: var(--font-weight--bolder);
+  font-weight: var(--font-weight-bolder);
+}
+.light {
+  font-weight: var(--font-weight-light);
 }
 .small {
   font-weight: var(--font-size-sm);
@@ -83,7 +86,7 @@ html {
 }
 .row {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 /* padding and margin */
@@ -378,7 +381,12 @@ html {
 .dark-yellow {
   color: var(--dark-yellow);
 }
-
+.blue {
+  color: var(--blue);
+}
+.orange {
+  color: var(--orange);
+}
 /* circle */
 .text-center {
   text-align: center;
@@ -414,6 +422,11 @@ html {
 .grid-row2-col2 {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.grid-row1-col2 {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }

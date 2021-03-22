@@ -49,27 +49,15 @@
           <br>
           <a href="#list" class="btn-secondary-md">List</a>
           <br>
-          <a href="..." class="btn-secondary-md">Card</a>
+          <a href="#navigation" class="btn-secondary-md">Navigation</a>
           <br>
-          <a href="..." class="btn-secondary-md">Card</a>
+          <a href="#rating" class="btn-secondary-md">Rating</a>
           <br>
-          <a href="..." class="btn-secondary-md">Card</a>
+          <a href="#grid" class="btn-secondary-md">Grid</a>
           <br>
-          <a href="..." class="btn-secondary-md">Card</a>
+          <a href="#text-utilities" class="btn-secondary-md">Text Utilities</a>
           <br>
-          <a href="..." class="btn-secondary-md">Card</a>
-          <br>
-          <a href="..." class="btn-secondary-md">Card</a>
-          <br>
-          <a href="..." class="btn-secondary-md">Card</a>
-          <br>
-          <a href="..." class="btn-secondary-md">Card</a>
-          <br>
-          <a href="..." class="btn-secondary-md">Card</a>
-          <br>
-          <a href="..." class="btn-secondary-md">Card</a>
-          <br>
-          <a href="..." class="btn-secondary-md">Card</a>
+          
         </div>
       
       </sidebar>
@@ -239,10 +227,13 @@
       </div>
       </div>
       <div class="pd-1 mg-bottom-1" id="button">
-        <h3>Button</h3>        
-        <button class="btn-primary-lg">Primary Button</button>
-        <button class="btn-primary-md">Primary Button</button>
-        <button class="btn-primary-sm">Primary Button</button>
+        <h3>Button</h3>
+        <div class="flex row align-items-center">
+          <button class="btn-primary-lg">Primary Button</button>
+          <button class="btn-primary-md">Primary Button</button>
+          <button class="btn-primary-sm">Primary Button</button>
+        </div>        
+
         <!-- <pre>          &#x3C;button class=&#x22;btn-primary-lg&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;
           &#x3C;button class=&#x22;btn-primary-md&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;
           &#x3C;button class=&#x22;btn-primary-sm&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;
@@ -260,9 +251,12 @@
         </div>
         
         <br/>
-        <button class="btn-secondary-lg">secondary Button</button>
-        <button class="btn-secondary-md">secondary Button</button>
-        <button class="btn-secondary-sm">secondary Button</button>
+        <div class="flex row align-items-center">
+          <button class="btn-secondary-lg">secondary Button</button>
+          <button class="btn-secondary-md">secondary Button</button>
+          <button class="btn-secondary-sm">secondary Button</button>
+        </div>
+
        
         <br/>
         <br/>
@@ -482,10 +476,10 @@
 
 
           <h4>Horizontal card</h4>
-          <div class="card row" style="width:35rem">
-            <img class="card-image" src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
+          <div class="card row" style="width:20rem">
+            <img src="https://cdn.discordapp.com/avatars/778699572787675136/bfd4785c0eb8a2be4eae7cc2fec27d34.png?size=256&quot"
             />
-            <div class="card-body" style="width: 25rem;">
+            <div class="card-body" style="width: 10rem;">
               <div class="card-head">Header</div>
               <div class="card-text">Lorem, ipsum ...</div>
               <button class="btn-primary-md mg-top-1">Go Somewhere</button>
@@ -494,9 +488,9 @@
           <div class="code">
             <pre>
               <code class="language-html">
-                &#x9;&#x9;&#x3C;div class=&#x22;card row&#x22; style=&#x22;width:35rem&#x22;&#x3E;
+                &#x9;&#x9;&#x3C;div class=&#x22;card row&#x22; style=&#x22;width:20rem&#x22;&#x3E;
                 &#x3C;img class=&#x22;card-image&#x22; src=&#x22;...&#x22;/&#x3E;
-                &#x3C;div class=&#x22;card-body&#x22; style=&#x22;width: 25rem;&#x22;&#x3E;
+                &#x3C;div class=&#x22;card-body&#x22; style=&#x22;width: 10rem;&#x22;&#x3E;
                   &#x3C;div class=&#x22;card-head&#x22;&#x3E;Header&#x3C;/div&#x3E;
                   &#x3C;div class=&#x22;card-text&#x22;&#x3E;Lorem, ipsum ...&#x3C;/div&#x3E;
                   &#x3C;button class=&#x22;btn-primary-md mg-top-1&#x22;&#x3E;Go Somewhere&#x3C;/button&#x3E;
@@ -701,7 +695,7 @@
           </div>
 
         </div>
-        <div class="mg-bottom-1 pd-1 ">
+        <div class="mg-bottom-1 pd-1 " id="navigation">
           <h3>Navigation</h3>
           <nav class="nav relative" >
             <div class="nav-left">
@@ -798,7 +792,7 @@
           
       	
         </div>
-        <div class="pd-1 mg-bottom-1">
+        <div class="pd-1 mg-bottom-1" id="rating">
           <h3>Rating for Ecommerce</h3>
           <div class="card card-body">
             <div class="rating-head">
@@ -837,6 +831,152 @@
               </code>
             </pre>
           </div>
+        </div>
+        <div class="pd-1 mg-bottom-1" id="grid">
+          <h3>Grid</h3>
+          <h4>2*1 grid</h4>
+          <div class="grid-row1-col2">
+            <div class="card card-body">
+              i am row 1 col 1
+            </div>
+            <div class="card card-body">
+              i am row 1 col 2
+            </div>
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;grid-row1-col2&#x22;&#x3E;
+                &#x3C;div class=&#x22;card card-body&#x22;&#x3E;
+                  i am row 1 col 1
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card card-body&#x22;&#x3E;
+                  i am row 1 col 2
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+          <h4>2*2 grid</h4>
+          <div class="grid-row2-col2">
+            <div class="card card-body">
+              i am row 1 col 1
+            </div>
+            <div class="card card-body">
+              i am row 1 col 2
+            </div>
+            <div class="card card-body">
+              i am row 2 col 1
+            </div>
+            <div class="card card-body">
+              i am row 2 col 2
+            </div>
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;grid-row2-col2&#x22;&#x3E;
+                &#x3C;div class="card card-body"&#x3E;
+                  i am row 1 col 1
+                &#x3C;/div&#x3E;
+                &#x3C;div class="card card-body"&#x3E;
+                  i am row 1 col 2
+                &#x3C;/div&#x3E;
+                &#x3C;div class="card card-body"&#x3E;
+                  i am row 2 col 1
+                &#x3C;/div&#x3E;
+                &#x3C;div class="card card-body"&#x3E;
+                  i am row 2 col 2
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+
+        </div>
+        <div class="pd-1 mg-bottom-1" id="text-utilities">
+          <h3>Text Utilities</h3>
+          <h4>font size utilities</h4>
+          <div class="xsm">extra small text</div>
+          <div class="sm">I am small text</div>
+          <div class="md">I am medium text</div>
+          <div class="lg">I am large text</div>
+          <div class="xlg">I am extra large text</div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;xsm&#x22;&#x3E;extra small text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;sm&#x22;&#x3E;I am small text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;md&#x22;&#x3E;I am medium text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;lg&#x22;&#x3E;I am large text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;xlg&#x22;&#x3E;I am extra large text&#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+          <h4>font weight utilities</h4>
+          <div class="light">This is light text</div>
+          <div >This is normal text</div>
+          <div class="bold">This is bold text</div>
+          <div class="bolder">This is bolder text</div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;light&#x22;&#x3E;This is light text&#x3C;/div&#x3E;
+                &#x3C;div &#x3E;This is normal text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;bold&#x22;&#x3E;This is bold text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;bolder&#x22;&#x3E;This is bolder text&#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+          <h4>font color utilities</h4>
+          <div>This is black text</div>
+          <div class="gray">This is gray text</div>
+          <div class="blue">This is blue text</div>
+          <div class="orange">This is orange text</div>
+          <div class="green">This is green text</div>
+          <div class="yellow">This is yellow text</div>
+          <div class="red">This is red text</div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div&#x3E;This is black text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;gray&#x22;&#x3E;This is gray text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;blue&#x22;&#x3E;This is blue text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;orange&#x22;&#x3E;This is orange text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;green&#x22;&#x3E;This is green text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;yellow&#x22;&#x3E;This is yellow text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;red&#x22;&#x3E;This is red text&#x3C;/div&#x3E;  
+              </code>
+            </pre>
+          </div>
+          <h4>Text align utilities</h4>
+          <div class="card card-body text-left">
+            This is left aligned text
+          </div>
+          <div class="card card-body text-center">
+            This is centered text
+          </div>
+          <div class="card card-body text-right">
+            This is right aligned text
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card card-body text-left&#x22;&#x3E;
+                  This is left aligned text
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card card-body text-center&#x22;&#x3E;
+                  This is centered text
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card card-body text-right&#x22;&#x3E;
+                  This is right aligned text
+                &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="pd-1 mg-bottom-1" id="toast">
+          <h3>Toast</h3>
         </div>
       </div>
     </div>
