@@ -47,6 +47,9 @@ body {
   overflow: auto;
   padding: 0.5rem;
 }
+.row-responsive {
+  flex-flow: row wrap;
+}
 @media screen and (max-width: 650px) {
   .container {
     display: flex;
@@ -60,5 +63,8 @@ body {
   }
   .code {
     width: 45vh;
+  }
+  .row-responsive {
+    flex-flow: column wrap;
   }
 }
