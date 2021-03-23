@@ -47,7 +47,7 @@
   --secondary-color-hover: #bedad9;
 }
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family) !important;
   font-size: var(--font-size-md);
 }
 
