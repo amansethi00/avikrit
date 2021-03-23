@@ -37,7 +37,7 @@ button {
   text-decoration: none;
   color: var(--white);
 }
-.btn-primary-lg:hover,
+.btn-primary:hover,
 .btn-primary-lg:hover,
 .btn-primary-md:hover,
 .btn-primary-sm:hover {
