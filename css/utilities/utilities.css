@@ -46,7 +46,7 @@
   --primary-color-hover: #4b9b96;
   --secondary-color-hover: #bedad9;
 }
-html {
+body {
   font-family: var(--font-family);
   font-size: var(--font-size-md);
 }
