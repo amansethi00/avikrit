@@ -164,6 +164,15 @@ body {
 }
 
 /* margin */
+.mg-1 {
+  margin: 1rem;
+}
+.mg-quarter {
+  margin: 0.25rem;
+}
+.mg-half {
+  margin: 0.5rem;
+}
 .mg-right-half {
   margin-right: 0.5rem;
 }
