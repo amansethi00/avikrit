@@ -31,6 +31,13 @@ button {
   border-radius: 1rem;
   text-decoration: none;
 }
+.btn-primary {
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: var(--white);
+}
+.btn-primary-lg:hover,
 .btn-primary-lg:hover,
 .btn-primary-md:hover,
 .btn-primary-sm:hover {
