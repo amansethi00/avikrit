@@ -236,7 +236,7 @@ body {
   flex-direction: row-reverse;
 }
 .col {
-  flex-direction: column;
+  flex-flow: column wrap;
 }
 .justify-content-center {
   justify-content: center;
