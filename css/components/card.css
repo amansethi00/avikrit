@@ -59,18 +59,24 @@
 }
 .card-text-overlay {
   position: absolute;
-  top: 2rem;
+  /* top: 2rem; */
+  top: 0px;
   text-align: center;
   width: 100%;
-  font-weight: var(--font-weight-bold);
-  background-color: var(--white);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: none;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.726);
+  /* font-weight: var(--font-weight-bold); */
+  background-color: var(rgb(255, 255, 255));
+  /* padding-top: 1rem; */
+  /* padding-bottom: 1rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
 }
-.card:hover > .card-text-overlay {
+/* .card:hover > .card-text-overlay {
   display: block;
-}
+} */
 
 .card-shadow-1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
