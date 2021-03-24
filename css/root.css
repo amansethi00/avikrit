@@ -13,6 +13,7 @@
 @import "./components/input.css";
 @import "./components/modal.css";
 @import "./components/rating.css";
+@import "./components/toast.css";
 
 /* pre {
   font-family: var(--font-family);
